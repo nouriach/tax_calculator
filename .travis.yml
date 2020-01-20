@@ -1,0 +1,4 @@
+language: node_js
+before_script: "cd exercises/javascript; npm ci"
+node_js:
+  - 10
