@@ -1,5 +1,5 @@
 const { DummyTaxCalculator } = require('./dummy-tax-calculator');
-const { TaxCalculator } = require('..tax-calculator');
+const { TaxCalculator } = require('../tax-calculator');
 const { Vehicle } = require('../vehicle');
 const { FuelType } = require('../fuel-type');
 
