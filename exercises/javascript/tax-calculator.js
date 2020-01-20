@@ -57,5 +57,8 @@ let TaxCalculator = class TaxCalculator {
           throw new Error('You have to implement the method doSomething!');
     }
   }
+
+  
+
 }
 module.exports = { TaxCalculator: TaxCalculator }
