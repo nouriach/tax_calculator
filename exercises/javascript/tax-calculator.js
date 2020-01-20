@@ -1,3 +1,7 @@
+const { FuelType } = require('./fuel-type');
+
+
+
 let TaxCalculator = class TaxCalculator {
   constructor(year) {
     if (year === undefined) {
@@ -6,14 +10,17 @@ let TaxCalculator = class TaxCalculator {
     } else {
       this.year = year;
     }
+    
   }
 
+  
   getYear() {
     return this.year;
   }
 
-
   calculateTax(vehicle) {
+    
+
     if (vehicle.co2Emissions === 0) {
       return 0;
     }
@@ -56,6 +63,8 @@ let TaxCalculator = class TaxCalculator {
     else {
           throw new Error('You have to implement the method doSomething!');
     }
+  
   }
+
 }
 module.exports = { TaxCalculator: TaxCalculator }
